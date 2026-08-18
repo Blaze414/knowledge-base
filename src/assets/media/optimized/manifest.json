@@ -1,0 +1,74 @@
+{
+  "peanuts-store-characters-menu": {
+    "width": 1492,
+    "height": 938
+  },
+  "peanuts-store-snoopy-collection": {
+    "width": 1492,
+    "height": 938
+  },
+  "peanuts-support-center-home": {
+    "width": 1513,
+    "height": 941
+  },
+  "peanuts-support-complete-request-form": {
+    "width": 1531,
+    "height": 941
+  },
+  "peanuts-support-footer-link": {
+    "width": 1524,
+    "height": 952
+  },
+  "peanuts-support-message-link": {
+    "width": 1513,
+    "height": 941
+  },
+  "peanuts-support-open-request-form": {
+    "width": 1550,
+    "height": 949
+  },
+  "peanuts-support-request-fields": {
+    "width": 1513,
+    "height": 941
+  },
+  "peanuts-support-search-help": {
+    "width": 1550,
+    "height": 949
+  },
+  "peanuts-support-submit-button": {
+    "width": 1550,
+    "height": 949
+  },
+  "peanuts-support-submit-request": {
+    "width": 1513,
+    "height": 941
+  },
+  "snoopy-dance": {
+    "width": 1024,
+    "height": 1024
+  },
+  "snoopy-doghouse": {
+    "width": 1024,
+    "height": 1024
+  },
+  "snoopy-flying-ace": {
+    "width": 1024,
+    "height": 1024
+  },
+  "snoopy-gang": {
+    "width": 1024,
+    "height": 1024
+  },
+  "snoopy-morning": {
+    "width": 1024,
+    "height": 1024
+  },
+  "snoopy-night": {
+    "width": 1024,
+    "height": 1024
+  },
+  "snoopy-suppertime": {
+    "width": 1024,
+    "height": 1024
+  }
+}

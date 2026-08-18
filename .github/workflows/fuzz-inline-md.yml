@@ -1,0 +1,221 @@
+name: Fuzz — inline markdown
+
+# Runs the property-based fuzz suite for the inline-markdown pipeline on
+# every push/PR that touches the parser, its tests, or this workflow. The
+# suite asserts two invariants on randomly-generated inputs:
+#   1. No author-supplied HTML element ever leaks into rendered output.
+#   2. Parsing/sanitizing/rendering never throws.
+# The job fails fast on either an assertion failure (HTML leak) or a
+# runtime error, and has fixed time budgets so a pathological regression
+# can't run forever in CI.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/lib/inline-md.tsx"
+      - "src/lib/inline-md.test.tsx"
+      - "src/lib/inline-md.fuzz.test.tsx"
+      - "package.json"
+      - "bun.lock"
+      - ".github/workflows/fuzz-inline-md.yml"
+  pull_request:
+    paths:
+      - "src/lib/inline-md.tsx"
+      - "src/lib/inline-md.test.tsx"
+      - "src/lib/inline-md.fuzz.test.tsx"
+      - "package.json"
+      - "bun.lock"
+      - ".github/workflows/fuzz-inline-md.yml"
+  # Nightly run catches flakes the per-PR seed didn't surface.
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: "Optional fast-check seed for replay (integer). Leave blank to mint a fresh seed."
+        required: false
+        type: string
+        default: ""
+
+concurrency:
+  group: fuzz-inline-md-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  fuzz:
+    name: inline-md property tests
+    runs-on: ubuntu-latest
+    # Hard wall-clock cap for the whole job, in addition to the
+    # per-test `--testTimeout` enforced by Vitest.
+    timeout-minutes: 5
+    env:
+      # Fail CI on any unhandled rejection from the test process — a
+      # runtime error inside a property must not be silently swallowed.
+      NODE_OPTIONS: "--unhandled-rejections=strict"
+      CI: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Cache Bun global install store
+        uses: actions/cache@v4
+        with:
+          # Bun's global package store — shared across installs, keyed on
+          # the lockfile so a dependency bump invalidates cleanly.
+          path: ~/.bun/install/cache
+          key: bun-store-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+          restore-keys: |
+            bun-store-${{ runner.os }}-
+
+      - name: Cache node_modules
+        id: node_modules_cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+
+      - name: Install dependencies
+        if: steps.node_modules_cache.outputs.cache-hit != 'true'
+        run: bun install --frozen-lockfile
+
+      - name: Cache Vite/Vitest transform cache
+        uses: actions/cache@v4
+        with:
+          # Vite caches deps + transform output here. Hit means cold
+          # vitest startup drops from ~1s to a few hundred ms, leaving
+          # more of the 4-minute budget for actual fuzz iterations.
+          path: |
+            node_modules/.vite
+            node_modules/.cache
+          key: vite-cache-${{ runner.os }}-${{ hashFiles('bun.lock', 'vite.config.ts', 'tsconfig.json') }}
+          restore-keys: |
+            vite-cache-${{ runner.os }}-
+
+      - name: Pick fuzz seed
+        id: seed
+        # Use the manually-dispatched seed if provided, otherwise mint one
+        # from the current epoch ms. The seed is exported for the test
+        # run and surfaced as a step output so downstream steps + the job
+        # summary can show it.
+        run: |
+          if [ -n "${{ github.event.inputs.seed }}" ]; then
+            SEED="${{ github.event.inputs.seed }}"
+          else
+            SEED="$(date +%s%3N)"
+          fi
+          echo "seed=$SEED" >> "$GITHUB_OUTPUT"
+          echo "FUZZ_SEED=$SEED" >> "$GITHUB_ENV"
+          echo "Using FUZZ_SEED=$SEED"
+
+      - name: Run inline-markdown fuzz suite
+        id: run
+        # 4-minute outer budget; Vitest enforces a 15s per-test budget via
+        # the script. Any HTML-element leak or thrown error fails the job.
+        # Tee the combined stdout/stderr to a log file so the failing
+        # input (fast-check counterexample, stack trace, etc.) survives
+        # as an uploadable artifact even after the runner is recycled.
+        timeout-minutes: 4
+        env:
+          FUZZ_SEED: ${{ steps.seed.outputs.seed }}
+          FUZZ_SEED_FILE: ${{ github.workspace }}/fuzz-seed.txt
+          # With install + Vite caches warm we have ~3x more budget for
+          # actual property runs. The fuzz suite reads these to scale up
+          # iteration counts in CI without changing the local default.
+          FUZZ_RUNS: "3000"
+          FUZZ_PERF_RUNS: "1000"
+        run: |
+          set -o pipefail
+          mkdir -p fuzz-artifacts
+          bun run test:fuzz:inline-md 2>&1 | tee fuzz-artifacts/fuzz.log
+
+      - name: Extract failing-input summary
+        if: failure() && steps.run.conclusion == 'failure'
+        run: |
+          mkdir -p fuzz-artifacts
+          LOG=fuzz-artifacts/fuzz.log
+          SUMMARY=fuzz-artifacts/failure-summary.txt
+          {
+            echo "Seed: ${{ steps.seed.outputs.seed }}"
+            echo
+            echo "--- fast-check counterexample(s) ---"
+            # fast-check prints "Counterexample:" and "Shrunk N time(s)"
+            # lines around the minimized failing input.
+            grep -nE "Counterexample|Shrunk|Property failed after|seed:|path:" "$LOG" || true
+            echo
+            echo "--- failing assertions ---"
+            grep -nE "AssertionError|Error:|FAIL|✗|×" "$LOG" || true
+            echo
+            echo "--- tail of log ---"
+            tail -n 120 "$LOG"
+          } > "$SUMMARY"
+          echo "::group::Failing-input summary"
+          cat "$SUMMARY"
+          echo "::endgroup::"
+
+      - name: Record replay command
+        if: always()
+        run: |
+          SEED="${{ steps.seed.outputs.seed }}"
+          CMD="FUZZ_SEED=$SEED bun run test:fuzz:inline-md"
+          # Annotate the run with a copy-paste replay command so it shows
+          # up in the PR's check output, not just the step summary.
+          if [ "${{ steps.run.outcome }}" = "failure" ]; then
+            echo "::error title=inline-md fuzz failed (seed $SEED)::Replay locally with: $CMD"
+          else
+            echo "::notice title=inline-md fuzz seed::$CMD"
+          fi
+          echo ""
+          echo "==================== REPLAY COMMAND ===================="
+          echo "  $CMD"
+          echo "========================================================"
+          echo ""
+          echo "## inline-md fuzz" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Outcome: \`${{ steps.run.outcome }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Seed: \`$SEED\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Replay locally:" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo '```sh' >> "$GITHUB_STEP_SUMMARY"
+          echo "$CMD" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          if [ -f fuzz-artifacts/failure-summary.txt ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "<details><summary>Failing-input summary</summary>" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            cat fuzz-artifacts/failure-summary.txt >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "</details>" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Stage seed alongside log/summary
+        if: always()
+        run: |
+          mkdir -p fuzz-artifacts
+          if [ -f fuzz-seed.txt ]; then cp fuzz-seed.txt fuzz-artifacts/seed.txt; fi
+          echo "${{ steps.seed.outputs.seed }}" > fuzz-artifacts/seed.txt
+          echo "FUZZ_SEED=${{ steps.seed.outputs.seed }} bun run test:fuzz:inline-md" \
+            > fuzz-artifacts/replay.sh
+          chmod +x fuzz-artifacts/replay.sh
+
+      - name: Upload fuzz artifacts (seed + log + failure summary)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fuzz-inline-md-${{ steps.seed.outputs.seed }}
+          path: |
+            fuzz-artifacts/seed.txt
+            fuzz-artifacts/replay.sh
+            fuzz-artifacts/fuzz.log
+            fuzz-artifacts/failure-summary.txt
+          if-no-files-found: warn
+          retention-days: 30

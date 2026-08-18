@@ -1,0 +1,1923 @@
+{
+  "generatedAt": "2026-08-18T00:25:51.723Z",
+  "defaultPageId": "shopping-browse-by-character",
+  "defaultHref": "/?page=shopping-browse-by-character",
+  "counts": {
+    "categories": 6,
+    "subPages": 64,
+    "articles": 64,
+    "documents": 2,
+    "images": 24,
+    "videos": 5,
+    "callouts": 4,
+    "tokens": 5,
+    "unresolvedTokens": 0
+  },
+  "categories": [
+    {
+      "id": "shopping-products",
+      "name": "Shopping and product selection",
+      "subPages": [
+        {
+          "id": "shopping-browse-by-character",
+          "title": "How to browse Peanuts products by character",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-browse-by-character",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-shop-by-collection",
+          "title": "How to shop by collection, holiday, theme, or recipient",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-shop-by-collection",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-gifts-by-price",
+          "title": "How to find gifts under $25 or $50",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-gifts-by-price",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-filter-products",
+          "title": "How to filter products by type and price",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-filter-products",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-sort-products",
+          "title": "How to sort products by price, popularity, or newest arrival",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-sort-products",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-quick-to-ship",
+          "title": "How to find quick-to-ship and last-minute gifts",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-quick-to-ship",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-apparel-size",
+          "title": "How to choose the correct apparel size",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-apparel-size",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-measure-shirt",
+          "title": "How to measure a shirt you already own for comparison",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-measure-shirt",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-out-of-stock",
+          "title": "How to sign up for an out-of-stock notification",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-out-of-stock",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-preorders-availability",
+          "title": "How to understand pre-orders and product availability",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-preorders-availability",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-phone-case-model",
+          "title": "How to select the correct phone-case model",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-phone-case-model",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-product-care",
+          "title": "How to care for Peanuts apparel and merchandise",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-product-care",
+          "hasArticle": true
+        },
+        {
+          "id": "shopping-wishlist",
+          "title": "How to save products to a wishlist",
+          "parentId": "shopping-products",
+          "href": "/?page=shopping-wishlist",
+          "hasArticle": true
+        }
+      ]
+    },
+    {
+      "id": "ordering-checkout",
+      "name": "Ordering and checkout",
+      "subPages": [
+        {
+          "id": "ordering-place-order",
+          "title": "How to place an order on the Peanuts Store",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-place-order",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-product-variant",
+          "title": "How to choose a size, colour, or product variant",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-product-variant",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-personalised",
+          "title": "How to order personalized Peanuts merchandise",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-personalised",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-delivery-estimates",
+          "title": "How to review estimated shipping and delivery dates before ordering",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-delivery-estimates",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-apply-coupon",
+          "title": "How to apply a coupon or discount code at checkout",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-apply-coupon",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-newsletter-discount",
+          "title": "How to claim the newsletter's 10% discount",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-newsletter-discount",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-missing-newsletter-coupon",
+          "title": "How to troubleshoot a missing newsletter coupon",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-missing-newsletter-coupon",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-discount-not-applying",
+          "title": "How to understand why a discount does not apply",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-discount-not-applying",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-statuses",
+          "title": "How to interpret order statuses such as New, Processing, Complete, or Closed",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-statuses",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-cancel-change",
+          "title": "How to cancel or change an order before processing",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-cancel-change",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-billing-verification",
+          "title": "How to avoid billing-address verification delays",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-billing-verification",
+          "hasArticle": true
+        },
+        {
+          "id": "ordering-taxes-duties",
+          "title": "How to understand sales tax, Canadian GST/HST, and possible duties",
+          "parentId": "ordering-checkout",
+          "href": "/?page=ordering-taxes-duties",
+          "hasArticle": true
+        }
+      ]
+    },
+    {
+      "id": "shipping-tracking",
+      "name": "Shipping and tracking",
+      "subPages": [
+        {
+          "id": "shipping-arrival-date",
+          "title": "How to calculate the likely arrival date for an order",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-arrival-date",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-track-order",
+          "title": "How to track a Peanuts Store shipment",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-track-order",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-tracking-not-updated",
+          "title": "How to troubleshoot tracking that has not updated",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-tracking-not-updated",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-delivered-not-received",
+          "title": "How to handle an order marked delivered but not received",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-delivered-not-received",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-split-shipment",
+          "title": "How to report missing items from a split shipment",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-split-shipment",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-canada",
+          "title": "How to ship an order to Canada",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-canada",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-duties",
+          "title": "How to understand international duties and import fees",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-duties",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-apo-fpo",
+          "title": "How to ship to an APO/FPO military address",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-apo-fpo",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-po-box",
+          "title": "How to determine whether a product can ship to a PO box",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-po-box",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-multiple-addresses",
+          "title": "How to send products to multiple addresses",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-multiple-addresses",
+          "hasArticle": true
+        },
+        {
+          "id": "shipping-returned-to-sender",
+          "title": "How to handle an order being returned to sender",
+          "parentId": "shipping-tracking",
+          "href": "/?page=shipping-returned-to-sender",
+          "hasArticle": true
+        }
+      ]
+    },
+    {
+      "id": "returns-refunds",
+      "name": "Returns, refunds, and damaged products",
+      "subPages": [
+        {
+          "id": "returns-start-return",
+          "title": "How to start a return within the 30-day return window",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-start-return",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-nonreturnable-products",
+          "title": "How to identify products that cannot be returned",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-nonreturnable-products",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-prepaid-label",
+          "title": "How to return an order using the prepaid label",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-prepaid-label",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-label-without-printer",
+          "title": "How to obtain a return label without a printer",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-label-without-printer",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-shipping-deductions",
+          "title": "How to understand return-shipping deductions",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-shipping-deductions",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-refund-timing",
+          "title": "How to check when a refund should appear",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-refund-timing",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-paypal-refund",
+          "title": "How to handle a PayPal refund",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-paypal-refund",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-damaged-product",
+          "title": "How to report a damaged product with photographs",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-damaged-product",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-wrong-item",
+          "title": "How to report receiving the wrong item",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-wrong-item",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-incorrect-size",
+          "title": "How to deal with an incorrect size when exchanges are unavailable",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-incorrect-size",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-gift-order",
+          "title": "How to return an order received as a gift",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-gift-order",
+          "hasArticle": true
+        },
+        {
+          "id": "returns-holiday-window",
+          "title": "How extended holiday returns work",
+          "parentId": "returns-refunds",
+          "href": "/?page=returns-holiday-window",
+          "hasArticle": true
+        }
+      ]
+    },
+    {
+      "id": "gifts-bulk",
+      "name": "Gifts and bulk purchasing",
+      "subPages": [
+        {
+          "id": "gifts-egift-card",
+          "title": "How to buy and redeem a Peanuts Store eGift card",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-egift-card",
+          "hasArticle": true
+        },
+        {
+          "id": "gifts-send-to-recipient",
+          "title": "How to send an order directly to a gift recipient",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-send-to-recipient",
+          "hasArticle": true
+        },
+        {
+          "id": "gifts-message",
+          "title": "How to include a gift message",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-message",
+          "hasArticle": true
+        },
+        {
+          "id": "gifts-pricing-in-package",
+          "title": "How to determine whether pricing appears in a gift package",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-pricing-in-package",
+          "hasArticle": true
+        },
+        {
+          "id": "gifts-wrapping",
+          "title": "How to request gift wrapping",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-wrapping",
+          "hasArticle": true
+        },
+        {
+          "id": "gifts-volume-discount",
+          "title": "How to purchase 100 or more items with a volume discount",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-volume-discount",
+          "hasArticle": true
+        },
+        {
+          "id": "gifts-bulk-event",
+          "title": "How to plan a bulk Peanuts order for an event or organization",
+          "parentId": "gifts-bulk",
+          "href": "/?page=gifts-bulk-event",
+          "hasArticle": true
+        }
+      ]
+    },
+    {
+      "id": "accounts-support",
+      "name": "Accounts and customer support",
+      "subPages": [
+        {
+          "id": "accounts-create-account",
+          "title": "How to create a Peanuts Store account",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-create-account",
+          "hasArticle": true
+        },
+        {
+          "id": "accounts-sign-in-reset-password",
+          "title": "How to sign in and reset a forgotten password",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-sign-in-reset-password",
+          "hasArticle": true
+        },
+        {
+          "id": "accounts-order-status",
+          "title": "How to check an order's status",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-order-status",
+          "hasArticle": true
+        },
+        {
+          "id": "accounts-contact-order-support",
+          "title": "How to contact customer service about an order",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-contact-order-support",
+          "hasArticle": true
+        },
+        {
+          "id": "accounts-submit-support-request",
+          "title": "How to submit a support request",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-submit-support-request",
+          "hasArticle": true
+        },
+        {
+          "id": "guides-contact-customer-support",
+          "title": "How to Contact Customer Support",
+          "parentId": "accounts-support",
+          "href": "/?page=guides-contact-customer-support",
+          "hasArticle": true
+        },
+        {
+          "id": "guides-contact-customer-support-slideshow",
+          "title": "How to Contact Customer Support: Visual Guide",
+          "parentId": "accounts-support",
+          "href": "/?page=guides-contact-customer-support-slideshow",
+          "hasArticle": true
+        },
+        {
+          "id": "accounts-unsubscribe",
+          "title": "How to unsubscribe from marketing emails",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-unsubscribe",
+          "hasArticle": true
+        },
+        {
+          "id": "accounts-privacy-policy",
+          "title": "How to understand the store's privacy policy",
+          "parentId": "accounts-support",
+          "href": "/?page=accounts-privacy-policy",
+          "hasArticle": true
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "id": "shopping-browse-by-character",
+      "title": "How to browse Peanuts products by character",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-browse-by-character",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "browse",
+        "by",
+        "character",
+        "characters",
+        "browse"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-shop-by-collection",
+      "title": "How to shop by collection, holiday, theme, or recipient",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-shop-by-collection",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "shop",
+        "by",
+        "collection",
+        "collections",
+        "gifts"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-gifts-by-price",
+      "title": "How to find gifts under $25 or $50",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-gifts-by-price",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "gifts",
+        "by",
+        "price",
+        "gifts",
+        "price",
+        "budget"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-filter-products",
+      "title": "How to filter products by type and price",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-filter-products",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "filter",
+        "products",
+        "filters",
+        "price"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-sort-products",
+      "title": "How to sort products by price, popularity, or newest arrival",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-sort-products",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "sort",
+        "products",
+        "sorting",
+        "browse"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-quick-to-ship",
+      "title": "How to find quick-to-ship and last-minute gifts",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-quick-to-ship",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "quick",
+        "to",
+        "ship",
+        "gifts",
+        "availability",
+        "shipping"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-apparel-size",
+      "title": "How to choose the correct apparel size",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-apparel-size",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "apparel",
+        "size",
+        "apparel",
+        "sizing"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-measure-shirt",
+      "title": "How to measure a shirt you already own for comparison",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-measure-shirt",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "measure",
+        "shirt",
+        "apparel",
+        "sizing",
+        "measurements"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-out-of-stock",
+      "title": "How to sign up for an out-of-stock notification",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-out-of-stock",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "out",
+        "of",
+        "stock",
+        "availability",
+        "restock",
+        "email"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-preorders-availability",
+      "title": "How to understand pre-orders and product availability",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-preorders-availability",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "preorders",
+        "availability",
+        "preorder",
+        "availability"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-phone-case-model",
+      "title": "How to select the correct phone-case model",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-phone-case-model",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "phone",
+        "case",
+        "model",
+        "phone-case",
+        "compatibility"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-product-care",
+      "title": "How to care for Peanuts apparel and merchandise",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-product-care",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "product",
+        "care",
+        "care",
+        "apparel",
+        "merchandise"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shopping-wishlist",
+      "title": "How to save products to a wishlist",
+      "categoryId": "shopping-products",
+      "href": "/?page=shopping-wishlist",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shopping-products",
+        "shopping",
+        "wishlist",
+        "wishlist",
+        "account"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-place-order",
+      "title": "How to place an order on the Peanuts Store",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-place-order",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "place",
+        "order",
+        "order",
+        "checkout"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-product-variant",
+      "title": "How to choose a size, colour, or product variant",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-product-variant",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "product",
+        "variant",
+        "variant",
+        "size",
+        "colour"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-personalised",
+      "title": "How to order personalized Peanuts merchandise",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-personalised",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "personalised",
+        "personalised",
+        "custom",
+        "final-sale"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-delivery-estimates",
+      "title": "How to review estimated shipping and delivery dates before ordering",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-delivery-estimates",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "delivery",
+        "estimates",
+        "delivery",
+        "shipping",
+        "estimate"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-apply-coupon",
+      "title": "How to apply a coupon or discount code at checkout",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-apply-coupon",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "apply",
+        "coupon",
+        "coupon",
+        "discount",
+        "checkout"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-newsletter-discount",
+      "title": "How to claim the newsletter's 10% discount",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-newsletter-discount",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "newsletter",
+        "discount",
+        "newsletter",
+        "coupon",
+        "discount"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-missing-newsletter-coupon",
+      "title": "How to troubleshoot a missing newsletter coupon",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-missing-newsletter-coupon",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "missing",
+        "newsletter",
+        "coupon",
+        "newsletter",
+        "coupon",
+        "email"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-discount-not-applying",
+      "title": "How to understand why a discount does not apply",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-discount-not-applying",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "discount",
+        "not",
+        "applying",
+        "coupon",
+        "discount",
+        "troubleshooting"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-statuses",
+      "title": "How to interpret order statuses such as New, Processing, Complete, or Closed",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-statuses",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "statuses",
+        "order-status",
+        "processing"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-cancel-change",
+      "title": "How to cancel or change an order before processing",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-cancel-change",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "cancel",
+        "change",
+        "cancel",
+        "change-order",
+        "support"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-billing-verification",
+      "title": "How to avoid billing-address verification delays",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-billing-verification",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "billing",
+        "verification",
+        "billing",
+        "payment",
+        "verification"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "ordering-taxes-duties",
+      "title": "How to understand sales tax, Canadian GST/HST, and possible duties",
+      "categoryId": "ordering-checkout",
+      "href": "/?page=ordering-taxes-duties",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "ordering-checkout",
+        "ordering",
+        "taxes",
+        "duties",
+        "tax",
+        "canada",
+        "duties"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-arrival-date",
+      "title": "How to calculate the likely arrival date for an order",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-arrival-date",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "arrival",
+        "date",
+        "arrival",
+        "processing",
+        "delivery"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-track-order",
+      "title": "How to track a Peanuts Store shipment",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-track-order",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "track",
+        "order",
+        "tracking",
+        "shipment"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-tracking-not-updated",
+      "title": "How to troubleshoot tracking that has not updated",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-tracking-not-updated",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "tracking",
+        "not",
+        "updated",
+        "tracking",
+        "delay",
+        "troubleshooting"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-delivered-not-received",
+      "title": "How to handle an order marked delivered but not received",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-delivered-not-received",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "delivered",
+        "not",
+        "received",
+        "delivered",
+        "missing-parcel",
+        "tracking"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-split-shipment",
+      "title": "How to report missing items from a split shipment",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-split-shipment",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "split",
+        "shipment",
+        "split-shipment",
+        "missing-item"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-canada",
+      "title": "How to ship an order to Canada",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-canada",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "canada",
+        "canada",
+        "international"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-duties",
+      "title": "How to understand international duties and import fees",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-duties",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "duties",
+        "international",
+        "duties",
+        "fees"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-apo-fpo",
+      "title": "How to ship to an APO/FPO military address",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-apo-fpo",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "apo",
+        "fpo",
+        "apo",
+        "fpo",
+        "military"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-po-box",
+      "title": "How to determine whether a product can ship to a PO box",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-po-box",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "po",
+        "box",
+        "po-box",
+        "shipping-restrictions"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-multiple-addresses",
+      "title": "How to send products to multiple addresses",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-multiple-addresses",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "multiple",
+        "addresses",
+        "multiple-addresses",
+        "gifts"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "shipping-returned-to-sender",
+      "title": "How to handle an order being returned to sender",
+      "categoryId": "shipping-tracking",
+      "href": "/?page=shipping-returned-to-sender",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "shipping-tracking",
+        "shipping",
+        "returned",
+        "to",
+        "sender",
+        "returned-to-sender",
+        "address",
+        "support"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-start-return",
+      "title": "How to start a return within the 30-day return window",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-start-return",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "start",
+        "return",
+        "return",
+        "30-days"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-nonreturnable-products",
+      "title": "How to identify products that cannot be returned",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-nonreturnable-products",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "nonreturnable",
+        "products",
+        "return",
+        "final-sale",
+        "eligibility"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-prepaid-label",
+      "title": "How to return an order using the prepaid label",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-prepaid-label",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "prepaid",
+        "label",
+        "return-label",
+        "tracking"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-label-without-printer",
+      "title": "How to obtain a return label without a printer",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-label-without-printer",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "label",
+        "without",
+        "printer",
+        "return-label",
+        "printer"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-shipping-deductions",
+      "title": "How to understand return-shipping deductions",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-shipping-deductions",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "shipping",
+        "deductions",
+        "return",
+        "shipping-cost",
+        "refund"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-refund-timing",
+      "title": "How to check when a refund should appear",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-refund-timing",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "refund",
+        "timing",
+        "refund",
+        "timing"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-paypal-refund",
+      "title": "How to handle a PayPal refund",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-paypal-refund",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "paypal",
+        "refund",
+        "refund",
+        "paypal"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-damaged-product",
+      "title": "How to report a damaged product with photographs",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-damaged-product",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "damaged",
+        "product",
+        "damaged",
+        "photos",
+        "support"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-wrong-item",
+      "title": "How to report receiving the wrong item",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-wrong-item",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "wrong",
+        "item",
+        "wrong-item",
+        "support"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-incorrect-size",
+      "title": "How to deal with an incorrect size when exchanges are unavailable",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-incorrect-size",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "incorrect",
+        "size",
+        "size",
+        "exchange",
+        "return"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-gift-order",
+      "title": "How to return an order received as a gift",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-gift-order",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "gift",
+        "order",
+        "gift",
+        "return"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "returns-holiday-window",
+      "title": "How extended holiday returns work",
+      "categoryId": "returns-refunds",
+      "href": "/?page=returns-holiday-window",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "returns-refunds",
+        "returns",
+        "holiday",
+        "window",
+        "holiday",
+        "return-window"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-egift-card",
+      "title": "How to buy and redeem a Peanuts Store eGift card",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-egift-card",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "egift",
+        "card",
+        "gift-card",
+        "checkout"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-send-to-recipient",
+      "title": "How to send an order directly to a gift recipient",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-send-to-recipient",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "send",
+        "to",
+        "recipient",
+        "gift",
+        "recipient",
+        "shipping"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-message",
+      "title": "How to include a gift message",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-message",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "message",
+        "gift",
+        "message"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-pricing-in-package",
+      "title": "How to determine whether pricing appears in a gift package",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-pricing-in-package",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "pricing",
+        "in",
+        "package",
+        "gift",
+        "pricing",
+        "packaging"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-wrapping",
+      "title": "How to request gift wrapping",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-wrapping",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "wrapping",
+        "gift",
+        "wrapping"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-volume-discount",
+      "title": "How to purchase 100 or more items with a volume discount",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-volume-discount",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "volume",
+        "discount",
+        "bulk",
+        "volume-discount",
+        "100-items"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "gifts-bulk-event",
+      "title": "How to plan a bulk Peanuts order for an event or organization",
+      "categoryId": "gifts-bulk",
+      "href": "/?page=gifts-bulk-event",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "gifts-bulk",
+        "gifts",
+        "bulk",
+        "event",
+        "bulk",
+        "event",
+        "organisation"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-create-account",
+      "title": "How to create a Peanuts Store account",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-create-account",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "create",
+        "account",
+        "account",
+        "sign-up"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-sign-in-reset-password",
+      "title": "How to sign in and reset a forgotten password",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-sign-in-reset-password",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "sign",
+        "in",
+        "reset",
+        "password",
+        "account",
+        "password",
+        "sign-in"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-order-status",
+      "title": "How to check an order's status",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-order-status",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "order",
+        "status",
+        "account",
+        "order-status",
+        "tracking"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-contact-order-support",
+      "title": "How to contact customer service about an order",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-contact-order-support",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "contact",
+        "order",
+        "support",
+        "support",
+        "order",
+        "contact"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-submit-support-request",
+      "title": "How to submit a support request",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-submit-support-request",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "submit",
+        "support",
+        "request",
+        "support",
+        "request",
+        "contact"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "guides-contact-customer-support",
+      "title": "How to Contact Customer Support",
+      "categoryId": "accounts-support",
+      "href": "/?page=guides-contact-customer-support",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "support",
+        "store",
+        "contact",
+        "submit-request",
+        "customer-service"
+      ],
+      "video": null,
+      "tokens": [
+        {
+          "kind": "image",
+          "key": "peanuts-support-footer-link",
+          "line": 5,
+          "resolved": true,
+          "target": "/src/assets/media/optimized/support/peanuts-support-footer-link.webp"
+        },
+        {
+          "kind": "image",
+          "key": "peanuts-support-search-help",
+          "line": 11,
+          "resolved": true,
+          "target": "/src/assets/media/optimized/support/peanuts-support-search-help.webp"
+        },
+        {
+          "kind": "image",
+          "key": "peanuts-support-open-request-form",
+          "line": 17,
+          "resolved": true,
+          "target": "/src/assets/media/optimized/support/peanuts-support-open-request-form.webp"
+        },
+        {
+          "kind": "image",
+          "key": "peanuts-support-complete-request-form",
+          "line": 23,
+          "resolved": true,
+          "target": "/src/assets/media/optimized/support/peanuts-support-complete-request-form.webp"
+        },
+        {
+          "kind": "image",
+          "key": "peanuts-support-submit-button",
+          "line": 29,
+          "resolved": true,
+          "target": "/src/assets/media/optimized/support/peanuts-support-submit-button.webp"
+        }
+      ]
+    },
+    {
+      "id": "guides-contact-customer-support-slideshow",
+      "title": "How to Contact Customer Support: Visual Guide",
+      "categoryId": "accounts-support",
+      "href": "/?page=guides-contact-customer-support-slideshow",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "support",
+        "store",
+        "contact",
+        "submit-request",
+        "visual-guide"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-unsubscribe",
+      "title": "How to unsubscribe from marketing emails",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-unsubscribe",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "unsubscribe",
+        "email",
+        "unsubscribe",
+        "privacy"
+      ],
+      "video": null,
+      "tokens": []
+    },
+    {
+      "id": "accounts-privacy-policy",
+      "title": "How to understand the store's privacy policy",
+      "categoryId": "accounts-support",
+      "href": "/?page=accounts-privacy-policy",
+      "lastUpdated": "2026-07-16",
+      "readTime": "3 min read",
+      "tags": [
+        "accounts-support",
+        "accounts",
+        "privacy",
+        "policy",
+        "privacy",
+        "data",
+        "cookies"
+      ],
+      "video": null,
+      "tokens": []
+    }
+  ],
+  "registries": {
+    "documents": [
+      {
+        "key": "standards-overview",
+        "name": "The Beagle Code — Overview",
+        "href": "/docs/rto-standards-2025-overview.md",
+        "kind": "md",
+        "size": "1 KB"
+      },
+      {
+        "key": "validation-checklist",
+        "name": "Suppertime Checklist",
+        "href": "/docs/validation-checklist.csv",
+        "kind": "csv",
+        "size": "1 KB"
+      }
+    ],
+    "images": [
+      {
+        "key": "snoopy-dance",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-dance.webp",
+        "alt": ""
+      },
+      {
+        "key": "snoopy-doghouse",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-doghouse.webp",
+        "alt": "Snoopy's doghouse command center"
+      },
+      {
+        "key": "snoopy-flying-ace",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-flying-ace.webp",
+        "alt": ""
+      },
+      {
+        "key": "snoopy-gang",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-gang.webp",
+        "alt": "The Peanuts gang gathered together"
+      },
+      {
+        "key": "snoopy-morning",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-morning.webp",
+        "alt": ""
+      },
+      {
+        "key": "snoopy-night",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-night.webp",
+        "alt": ""
+      },
+      {
+        "key": "snoopy-suppertime",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-suppertime.webp",
+        "alt": "Suppertime schedule planning"
+      },
+      {
+        "key": "peanuts-store-characters-menu",
+        "src": "/src/assets/media/optimized/store/peanuts-store-characters-menu.webp",
+        "alt": "Peanuts Store Characters menu with the Snoopy link visible"
+      },
+      {
+        "key": "peanuts-store-snoopy-collection",
+        "src": "/src/assets/media/optimized/store/peanuts-store-snoopy-collection.webp",
+        "alt": "Peanuts Store Snoopy collection with products and filters"
+      },
+      {
+        "key": "peanuts-support-center-home",
+        "src": "/src/assets/media/optimized/support/peanuts-support-center-home.webp",
+        "alt": "Peanuts Store Support Center landing page with support categories"
+      },
+      {
+        "key": "peanuts-support-complete-request-form",
+        "src": "/src/assets/media/optimized/support/peanuts-support-complete-request-form.webp",
+        "alt": "Submit a request form showing the email, request type, subject, description, return reason, and attachment fields"
+      },
+      {
+        "key": "peanuts-support-footer-link",
+        "src": "/src/assets/media/optimized/support/peanuts-support-footer-link.webp",
+        "alt": "Peanuts Store footer with the Support Center link under Customer Service"
+      },
+      {
+        "key": "peanuts-support-message-link",
+        "src": "/src/assets/media/optimized/support/peanuts-support-message-link.webp",
+        "alt": "Support Center page with Ordering Information selected and Message Customer Support highlighted"
+      },
+      {
+        "key": "peanuts-support-open-request-form",
+        "src": "/src/assets/media/optimized/support/peanuts-support-open-request-form.webp",
+        "alt": "Support Center categories with Message Customer Support highlighted near the bottom of the page"
+      },
+      {
+        "key": "peanuts-support-request-fields",
+        "src": "/src/assets/media/optimized/support/peanuts-support-request-fields.webp",
+        "alt": "Submit a request form fields highlighted with email, support topic, subject, description, return reason, attachment, and submit button"
+      },
+      {
+        "key": "peanuts-support-search-help",
+        "src": "/src/assets/media/optimized/support/peanuts-support-search-help.webp",
+        "alt": "Peanuts Store Support Center with the search bar and help categories highlighted"
+      },
+      {
+        "key": "peanuts-support-submit-button",
+        "src": "/src/assets/media/optimized/support/peanuts-support-submit-button.webp",
+        "alt": "Bottom of the Submit a request form with the Submit button highlighted"
+      },
+      {
+        "key": "peanuts-support-submit-request",
+        "src": "/src/assets/media/optimized/support/peanuts-support-submit-request.webp",
+        "alt": "Submit a request page in Peanuts Store Support"
+      },
+      {
+        "key": "dashboard",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-doghouse.webp",
+        "alt": "Snoopy's doghouse command center"
+      },
+      {
+        "key": "validation",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-suppertime.webp",
+        "alt": "Suppertime schedule planning"
+      },
+      {
+        "key": "team",
+        "src": "/src/assets/media/optimized/snoopy/snoopy-gang.webp",
+        "alt": "The Peanuts gang gathered together"
+      },
+      {
+        "key": "lesson-step-1",
+        "src": "/__l5e/assets-v1/e243da72-6350-45f5-85eb-bc02b7e8f3c3/lesson-step-1.gif?v=1",
+        "alt": "Step 1: Click the Activities button in the homepage top navigation"
+      },
+      {
+        "key": "lesson-step-2",
+        "src": "/__l5e/assets-v1/3340379e-8c88-4d0c-a320-094f8fd220c0/lesson-step-2.gif?v=1",
+        "alt": "Step 2: Open Peanuts Lesson Plan from the Activities hub"
+      },
+      {
+        "key": "lesson-step-3",
+        "src": "/__l5e/assets-v1/d6d1cd9c-cb76-436b-91eb-9c573360ebcc/lesson-step-3.gif?v=1",
+        "alt": "Step 3: Scroll to Solar Science and click Parent Guide (Ages 4–7)"
+      }
+    ],
+    "videos": [
+      {
+        "key": "intro",
+        "url": "https://www.youtube.com/watch?v=iTssF_NYusQ"
+      },
+      {
+        "key": "setup",
+        "url": "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+      },
+      {
+        "key": "firstProject",
+        "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+      },
+      {
+        "key": "roles",
+        "url": "https://www.youtube.com/watch?v=L_jWHffIx5E"
+      },
+      {
+        "key": "validation",
+        "url": "https://www.youtube.com/watch?v=9bZkp7q19f0"
+      }
+    ],
+    "callouts": [
+      {
+        "key": "back-up-first",
+        "kind": "NOTE",
+        "text": "Back up your doghouse settings before making major changes — Snoopy hates surprises."
+      },
+      {
+        "key": "suppertime-protest",
+        "kind": "WARNING",
+        "text": "Skipping or delaying suppertime triggers an immediate, dramatic protest dance."
+      },
+      {
+        "key": "lucy-football",
+        "kind": "WARNING",
+        "text": "Never trust Lucy with the football. She will pull it away every single time."
+      },
+      {
+        "key": "woodstock-copilot",
+        "kind": "NOTE",
+        "text": "Woodstock is the only authorised co-pilot for Flying Ace missions."
+      }
+    ]
+  },
+  "orphans": {
+    "articlesWithoutCategory": [],
+    "subPagesWithoutArticle": []
+  }
+}
