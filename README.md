@@ -1,4 +1,4 @@
-# Docs Companion — Snoopy HQ Support Centre
+# Knowledge Base — Snoopy HQ Support Centre
 
 A content-driven knowledge-base application: searchable help articles, visual
 step-by-step walkthroughs, interactive slideshows, and a direct support contact
