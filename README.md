@@ -1,4 +1,4 @@
-# Knowledge Base — Snoopy HQ Support Centre
+# Knowledge Base 
 
 A content-driven knowledge-base application: searchable help articles, visual
 step-by-step walkthroughs, interactive slideshows, and a direct support contact
